@@ -1,6 +1,6 @@
 # Group-Caus-Assets-Manager
 
-This app that allows swift managing and planning of assets.
+This app allows swift managing and planning of assets.
 
 ## Notes
 
