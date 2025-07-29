@@ -10,10 +10,10 @@ namespace Group_Caus_Assests_Manager.Core.Interfaces
 {
     public interface ICarService
     {
-        public List<Car> GetCars();
-        public Car GetCarById(int id);
-        public bool AddCar(Car car);
-        public bool UpdateCar(Car car);
-        public bool DeleteCar(int id);
+        List<Car> GetCars();
+        Car GetCarById(int id);
+        Task<bool> AddCar(Car car);
+        Task<bool> UpdateCar(Car car);
+        Task<bool> DeleteCar(int id);
     }
 }

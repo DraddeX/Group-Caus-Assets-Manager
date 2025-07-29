@@ -10,17 +10,7 @@ namespace Group_Caus_Assests_Manager.Core.Services
 {
     public class CarService : ICarService
     {
-        public async void AddCar(Car car)
-        {
-            throw new NotImplementedException();
-        }
-
-        public async void DeleteCar(int id)
-        {
-            throw new NotImplementedException();
-        }
-
-        public  Car GetCarById(int id)
+        public Car GetCarById(int id)
         {
             throw new NotImplementedException();
         }
@@ -29,8 +19,17 @@ namespace Group_Caus_Assests_Manager.Core.Services
         {
             throw new NotImplementedException();
         }
+        public async Task<bool> AddCar(Car car)
+        {
+            throw new NotImplementedException();
+        }
 
-        public async void UpdateCar(Car car)
+        public async Task<bool> DeleteCar(int id)
+        {
+            throw new NotImplementedException();
+        }
+
+        public async Task<bool> UpdateCar(Car car)
         {
             throw new NotImplementedException();
         }
