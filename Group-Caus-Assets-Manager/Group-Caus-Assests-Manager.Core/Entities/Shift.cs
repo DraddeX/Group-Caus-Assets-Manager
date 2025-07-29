@@ -19,5 +19,7 @@ namespace Group_Caus_Assests_Manager.Core.Entities
         public Driver Driver { get; set; }
         public DateTime StartTime { get; set; }
         public DateTime EndTime { get; set; }
+        public TimeSpan Duration => EndTime - StartTime;
+        public DateTime Date => StartTime.Date;
     }
 }
