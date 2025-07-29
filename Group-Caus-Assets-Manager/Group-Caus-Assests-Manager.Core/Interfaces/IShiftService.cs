@@ -9,14 +9,13 @@ namespace Group_Caus_Assests_Manager.Core.Interfaces
 {
     public interface IShiftService
     {
-        public List<Shift> GetShifts();
-        public Shift GetShiftById(int id);
-        public bool AddShift(Shift shift);
-        public bool UpdateShift(Shift shift);
-        public bool DeleteShift(int id);
-        public List<Shift> GetShiftsByDate(DateTime date);
-        public List<Shift> GetShiftsByDriverId(int driverId);
-        public List<Shift> GetShiftsByCarId(int carId);
-        public TimeSpan CalculateTotalDuration(List<Shift> shifts);
+        Task<List<Shift>> GetShiftsAsync();
+        Task<Shift> GetShiftByIdAsync(int id);
+        Task<bool> AddShiftAsync(Shift shift);
+        Task<bool> UpdateShiftAsync(Shift shift);
+        Task<bool> DeleteShiftAsync(int id);
+        Task<List<Shift>> GetShiftsByDateAsync(DateTime date);
+        Task<List<Shift>> GetShiftsByDriverIdAsync(int driverId);
+        Task<List<Shift>> GetShiftsByCarIdAsync(int carId);
     }
 }

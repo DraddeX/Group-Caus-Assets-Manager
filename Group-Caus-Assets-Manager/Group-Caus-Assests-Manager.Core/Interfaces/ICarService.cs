@@ -10,8 +10,8 @@ namespace Group_Caus_Assests_Manager.Core.Interfaces
 {
     public interface ICarService
     {
-        List<Car> GetCars();
-        Car GetCarById(int id);
+        Task<List<Car>> GetCars();
+        Task<Car> GetCarById(int id);
         Task<bool> AddCar(Car car);
         Task<bool> UpdateCar(Car car);
         Task<bool> DeleteCar(int id);

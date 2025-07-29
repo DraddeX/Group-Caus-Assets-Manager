@@ -1,5 +1,6 @@
 ﻿using Group_Caus_Assests_Manager.Core.Entities;
 using Group_Caus_Assests_Manager.Core.Interfaces;
+using Group_Caus_Assests_Manager.Core.Repositories;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -8,28 +9,34 @@ using System.Threading.Tasks;
 
 namespace Group_Caus_Assests_Manager.Core.Services
 {
-    public class CarService : ICarService
+    public class MockDriverService : IDriverService
     {
-        public Car GetCarById(int id)
+        public DriverRepo _driverRepo;
+        public MockDriverService()
+        {
+            _driverRepo = new();
+        }
+        public Task<bool> AddDriver(Driver driver)
         {
             throw new NotImplementedException();
         }
 
-        public List<Car> GetCars()
-        {
-            throw new NotImplementedException();
-        }
-        public async Task<bool> AddCar(Car car)
+        public Task<bool> DeleteDriver(int id)
         {
             throw new NotImplementedException();
         }
 
-        public async Task<bool> DeleteCar(int id)
+        public Task<Driver> GetDriverById(int id)
         {
             throw new NotImplementedException();
         }
 
-        public async Task<bool> UpdateCar(Car car)
+        public Task<List<Driver>> GetDrivers()
+        {
+            throw new NotImplementedException();
+        }
+
+        public Task<bool> UpdateDriver(Driver driver)
         {
             throw new NotImplementedException();
         }

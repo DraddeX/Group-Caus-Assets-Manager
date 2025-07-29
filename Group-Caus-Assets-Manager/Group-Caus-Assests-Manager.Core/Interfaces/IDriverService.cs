@@ -9,10 +9,10 @@ namespace Group_Caus_Assests_Manager.Core.Interfaces
 {
     public interface IDriverService
     {
-        public List<Driver> GetDrivers();
-        public Driver GetDriverById(int id);
-        public bool AddDriver(Driver driver);
-        public bool UpdateDriver(Driver driver);
-        public bool DeleteDriver(int id);
-    }
+        Task<List<Driver>> GetDrivers();
+        Task<Driver> GetDriverById(int id);
+        Task<bool> AddDriver(Driver driver);
+        Task<bool> UpdateDriver(Driver driver);
+        Task<bool> DeleteDriver(int id);
+    }   
 }
